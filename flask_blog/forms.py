@@ -1,9 +1,7 @@
-from xml.dom import ValidationErr
 from flask_wtf import FlaskForm
 from sqlalchemy import true
 from wtforms import StringField, PasswordField, SubmitField, BooleanField
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
-
 from flask_blog.models import User
 
 class RegistrationForm(FlaskForm):
